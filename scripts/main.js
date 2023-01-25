@@ -17,7 +17,7 @@ let windowwidth = window.innerWidth;
   // MODAL
   const body = document.getElementsByTagName("BODY")[0];
   var atr = document.createAttribute('style');
-  atr.value = 'overflow: hidden;'
+  atr.value = 'overflow: hidden;';
   const openModalButtons = document.querySelectorAll("[data-modal-target]");
   const closeModalButtons = document.querySelectorAll("[data-close-button]");
   const overlay = document.getElementById("overlay");
@@ -25,7 +25,7 @@ let windowwidth = window.innerWidth;
   overlay.addEventListener('click',() =>{
     const openModals = document.querySelectorAll('.apply-modal.active');
     openModals.forEach(modal => {
-      body.removeAttributeNode(atr);
+      body.removeAttribute("style");
       closeModal(modal);
     })
   })
@@ -40,7 +40,6 @@ let windowwidth = window.innerWidth;
   closeModalButtons.forEach(button =>{
     button.addEventListener('click', () =>{
       const modal = button.closest('.apply-modal');
-      body.removeAttributeNode(atr);
       closeModal(modal);
     })
   })

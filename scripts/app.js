@@ -19,6 +19,7 @@ window.onload = function(){
         emailjs.send("service_9lyqbii","template_wk66k99",params);
         const modal = button.closest('.apply-modal');
         closeModal(modal);
+        body.removeAttribute("style");
         }); 
 
     sub_form.addEventListener('submit',function(event){
