@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "Novecento";
+  src: url("../fonts/Novecento\ Normal.ttf");
+}
+@font-face {
+  font-family: "Novecento Mid";
+  src: url("../fonts/Novecento\ Medium.ttf");
+}
+@font-face {
+  font-family: "Novecento Cond";
+  src: url("../fonts/Novecento\ CondNormal.ttf");
+}
+@mixin media($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap");
+$primary-color: #66b9ed;
+$secondary-color: #fc0c0c;
+$xl: 1441px;
+$lg: 1025px;
+$md: 769px;
+$msm: 520px;
+$sm: 426px;
+$xs: 375px;
+.primary-font {
+  font-family: "Novecento";
+}
+.secondary-font {
+  font-family: "Novecento Mid";
+}
+.alt-font {
+  font-family: "Novecento Cond";
+}
+.text-font {
+  font-family: "Poppins", sans-serif;
+}
+.primary-bg {
+  background-color: $primary-color !important;
+}
+.primary-text {
+  color: $primary-color;
+}
+.secondary-text {
+  color: $secondary-color;
+}
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #30303074;
+  position: absolute;
+}
+.primary-btn {
+  background-color: $secondary-color;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Novecento Mid";
+  padding: 15px 30px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  &:hover {
+    color: #fff;
+    background-color: #c90a10;
+  }
+}
+.underline-title {
+  width: 100px;
+  height: 3px;
+  background-color: $secondary-color;
+  margin: 0 auto;
+}
+
+#preloader {
+  z-index: 999;
+  background-color: #fff;
+  transition: all 0.4s;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  img {
+    width: 120px;
+    @include media(1025px) {
+      width: 100px;
+    }
+    @include media(426px) {
+      width: 90px;
+    }
+  }
+}
+#prenav {
+  position: relative;
+  z-index: 3;
+  #prenav-links{
+    p {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  #social-icons {
+    a {
+      color: #000;
+      transition: all 0.3s;
+      &:hover {
+        color: #c90a10;
+      }
+    }
+  }
+}
+nav {
+  z-index: 3;
+
+  .navbar-brand {
+    @include media(991px){
+        top: -20px;
+    }
+    @include media($md) {
+      top: -20px;
+    }
+    z-index: 3;
+    img {
+      &:nth-child(1) {
+        width: 80px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        border-radius: 50%;
+      }
+      &:nth-child(2) {
+        height: 35px;
+        @include media($msm){
+          transform: scaleX(0.9);
+        }
+        @include media(500px){
+          transform: scale(0.8);
+        }
+        @include media(485px){
+          transform: scale(0.75);
+        }
+        @include media(470px){
+          transform: scale(0.7);
+        }
+        @include media(465px){
+          display: none;
+        }
+
+      }
+    }
+  }
+  .navbar-nav {
+    .underline {
+      width: 0%;
+      height: 2px;
+      transition: all 0.3s;
+      margin: 0 auto;
+      background-color: $primary-color;
+    }
+    .nav-link {
+      color: #000 !important;
+      margin: 0px 15px;
+      transition: all 0.3s;
+      &:hover {
+        .underline {
+          width: 100%;
+        }
+        color: $primary-color !important;
+      }
+    }
+    .active {
+      color: $primary-color !important;
+      .underline {
+        width: 100%;
+      }
+    }
+  }
+}
+#cover {
+  background-image: url("../img/cover-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cover-text {
+    font-size: 1.7rem;
+    width: 75%;
+    margin: 2rem auto;
+  }
+}
+#features {
+  .feature-img {
+    margin: 0 auto;
+    transition: all 0.3s;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+#about {
+  background-image: url("../img/cover-bg-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-size: 1.24rem;
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+  .underline-title {
+    width: 100px;
+    height: 3px;
+    background-color: $secondary-color;
+    margin: 0 auto;
+  }
+  .about-wrap {
+    width: 75%;
+    @include media($sm) {
+      width: 100%;
+    }
+  }
+}
+#services {
+  background-color: #eeeeee;
+  .service {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 80px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: #fff;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: none;
+      transform: translateY(10px);
+    }
+    @include media($lg) {
+      width: 100%;
+    }
+    @include media($md) {
+      width: 100%;
+    }
+    @include media($sm) {
+      width: 100%;
+    }
+    .service-image {
+      height: 170px;
+      width: 30%;
+      @include media($md) {
+        width: 70%;
+      }
+      background-image: url("../img/service-1.jpg");
+      background-position: bottom;
+      background-size: cover;
+    }
+    .service-title{
+      width: 384px;
+    }
+  }
+}
+#notes {
+  background: linear-gradient(91.8deg, #66b9ed 21.58%, #cde8f9 92.47%);
+  .note-text {
+    font-weight: 500;
+  }
+  .note-icon {
+    font-size: 4rem;
+  }
+}
+#contact {
+  background-image: url("../img/cover-bg-2.jpg");
+  background-position: bottom;
+  background-size: cover;
+  .form-input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #979797;
+    padding: 10px;
+    border-radius: 10px;
+    color: #cde8f9;
+    font-family: "Poppins", sans-serif;
+  }
+}
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.512);
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  @include media($lg) {
+    width: 80%;
+  }
+  @include media($md) {
+    width: 90%;
+    padding: 30px 0px;
+    margin-top: 20px;
+  }
+  @include media($sm) {
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+  border: 1px solid #979797;
+  border-radius: 15px;
+}
+#email_icon{
+  @include media($md){
+    display:none;
+  }
+  @include media(575px){
+    display: block;
+  }
+}
+footer {
+  img{
+    width: 60%;
+    transform: translateX(33.3%);
+  }
+  .under-footer {
+    background-color: #d9d9d9 !important;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: #000;
+  }
+}
+.col-centered{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#career-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.apply-modal{
+  max-height: 90%;
+  overflow-y: initial !important;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 200ms ease-in-out;
+  overflow: hidden;
+  width: 800px;
+  max-width: 85%;
+  background-color: white;
+  border-radius: 15px;
+  button{
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    scale: 2.3;
+    cursor: pointer;
+    overflow: hidden;
+    padding-right: 1rem;
+  }
+  .modal-header{
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .modal-body{
+    .form-input{
+      width: 100%;
+      background-color: white;
+      border: 1px solid #979797;
+      opacity: 0.8;
+      padding: 10px;
+      border-radius: 10px;
+      color: black;
+      font-family: "Poppins", sans-serif;
+    }
+    label{
+      padding-left: 10px;
+    }
+  }
+}
+#apply-yoe{
+  width: 50%;
+  background-color: white;
+  border: 1px solid #979797;
+  opacity: 0.8;
+  padding: 10px;
+  margin-left: 0;
+  border-radius: 10px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+#apply-toe{
+  width: 174px;
+  margin-left: 0;
+  background-color: white;
+  border: 1px solid #979797;  
+}
+.apply-modal.active{
+  transform: translate(-50%,-50%) scale(1);
+}
+.modal-title{
+  padding-left: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+

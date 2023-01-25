@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mailto:alarie@gmail.com" />
+    <meta name="keywords" content="INSERT KEYWORDS HERE." />
+    <meta name="description" content="INSERT DESCRIPTION HERE" />
+
+    <meta
+      name="copyright"
+      content="Little Sparrow 2022. All rights reserved."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="img/logo-lw.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Little Sparrrow</title>
+
+    <!-- EMAIL JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div
+      id="preloader"
+      class="justify-content-center align-items-center w-100 h-100"
+    >
+      <img
+        src="img/logo-lw.png"
+        class="rounded-circle rotate-center heartbeat"
+        alt="loader"
+      />
+    </div>
+    <!-- PRENAV -->
+    <section id="prenav" class="primary-bg py-1">
+      <div class="container">
+        <div
+          class="d-flex flex-sm-row flex-column justify-content-between align-items-center px-lg-0 px-md-5 px-0 py-2"
+        >
+          <div class="">
+            <div id="prenav-links"class="d-flex flex-sm-row flex-column">
+              <p
+                class="text-font m-0 d-flex align-items-center justify-content-center"
+              >
+                <iconify-icon
+                  class="text-white me-2 fs-5"
+                  icon="fluent:mail-20-filled"
+                ></iconify-icon
+                ><a href="mailto:dispatch@littlesparrow.us">dispatch@littlesparrow.us</a>
+              </p>
+
+              <p
+                class="text-font m-0 ms-2 d-flex align-items-center justify-content-center"
+              >
+                <iconify-icon
+                  class="text-white me-2 fs-5"
+                  icon="ic:baseline-phone"
+                ></iconify-icon
+                ><a href="tel:+1-463-223-5997">(463) 223-5997</a>
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <p class="m-0 text-end fs-4 text-font" id="social-icons">
+              <a href="#" class="mx-4"
+                ><iconify-icon inline icon="uil:instagram"></iconify-icon
+              ></a>
+              <a href="#" class="mx-4"
+                ><iconify-icon inline icon="ri:facebook-box-fill"></iconify-icon
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white position-absolute w-100"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand position-absolute" href="#" id="nav-logo"
+          ><img src="img/logo-lw.png" alt="img" />
+          <img src="img/logo-text-little-wing.png" alt="img" class="ms-3" />
+        </a>
+        <p></p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav secondary-font mt-lg-0 mt-3">
+            <a class="nav-link active" aria-current="page" href="#about"
+              >About
+              <div class="underline"></div>
+            </a>
+            <a class="nav-link" href="#services"
+              >Services
+              <div class="underline"></div
+            ></a>
+            <a class="nav-link" href="#career"
+              >Career
+              <div class="underline"></div
+            ></a>
+            <a class="nav-link" href="#contact"
+              >Contact
+              <div class="underline"></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- COVER -->
+    <section id="cover">
+      <div class="dark-overlay"></div>
+      <div class="container position-relative">
+        <h1 class="text-center text-white secondary-font display-2">
+          FAST & SAFE <br />TRANSPORATITON
+        </h1>
+        <p class="text-center text-white secondary-font cover-text ">
+          If you appreciate good and fast </br>our relationship is going to last.
+        </p>
+        
+      </div>
+    </section>
+    <!-- FEATURES -->
+    <section id="features" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 d-flex flex-column">
+            <img
+              src="img/feature-1.png"
+              class="feature-img img-fluid"
+              alt="feature"
+            />
+            <h5 class="text-center mt-3 secondary-font">FAMILY OWNED</h5>
+          </div>
+          <div class="col-sm-3 d-flex flex-column">
+            <img
+              src="img/feature-2.png"
+              class="feature-img img-fluid"
+              alt="feature"
+            />
+            <h5 class="text-center mt-3 secondary-font">FISHERS,IN</br>BASED</h5>
+          </div>
+          <div class="col-sm-3 d-flex flex-column">
+            <img
+              src="img/feature-3.png"
+              class="feature-img img-fluid"
+              alt="feature"
+            />
+            <h5 class="text-center mt-3 secondary-font">SAFE & RELIABLE</h5>
+          </div>
+          <div class="col-sm-3 d-flex flex-column">
+            <img
+              src="img/feature-4.png"
+              class="feature-img img-fluid"
+              alt="feature"
+            />
+            <h5 class="text-center mt-3 secondary-font">
+              SPECIALIZED IN <br />
+              DRY VAN LOADS
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="position-relative">
+      <div class="dark-overlay"></div>
+      <div class="container position-relative py-5">
+        <div class="row">
+          <h2 class="text-center secondary-text secondary-font h1">ABOUT US</h2>
+          <div class="underline-title" data-aos="flip-left"></div>
+        </div>
+        <div class="row mt-5 about-wrap mx-auto">
+          <p class="text-font text-center text-white">
+            We are an upcoming and fast growing freight company
+          </p>
+          <p class="text-font text-center text-white">
+            looking forward to good cooperation and great experience.
+          </p>
+          <p
+            class="text-font text-white d-flex align-items-center justify-content-center mt-4"
+          >
+            <iconify-icon
+              inline
+              icon="mdi:checkbox-marked-circle-outline"
+              class="me-2 secondary-text fs-4"
+            ></iconify-icon
+            >Great working conditions
+          </p>
+          <p
+            class="text-font text-white d-flex align-items-center justify-content-center"
+          >
+            <iconify-icon
+              inline
+              icon="mdi:checkbox-marked-circle-outline"
+              class="me-2 secondary-text fs-4"
+            ></iconify-icon
+            >Polite personnel
+          </p>
+          <p
+            class="text-font text-white d-flex align-items-center justify-content-center"
+          >
+            <iconify-icon
+              inline
+              icon="mdi:checkbox-marked-circle-outline"
+              class="me-2 secondary-text fs-4"
+            ></iconify-icon
+            >Reliable & fast
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- STATS -->
+    <section id="stats" class="py-5">
+      <div class="container">
+        <div class="row align-items-center mt-sm-0">
+          <div class="col-sm-4 mb-sm-0 mb-3">
+            <h3 class="secondary-font">
+              WHY BOOK YOUR <br />FREIGHT
+              <span class="secondary-text">WITH US</span>?
+            </h3>
+          </div>
+          <div class="col-sm-4 col-6">
+            <p class="alt-font m-0 display-3 text-center">7,000+</p>
+            <p class="primary-text m-0 alt-font display-6 text-center">LOADS MOVED</p>
+          </div>
+          <div class="col-sm-4 col-6 align-items-center">
+            <p class="alt-font m-0 display-3 text-center">24 / 7</p>
+            <p class="primary-text m-0 alt-font display-6 text-center">SUPPORT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center secondary-text secondary-font h1">Services</h2>
+          <div class="underline-title" data-aos="flip-left"></div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-9 my-3 col-centered">
+            <div class="service">
+              <div class="service-image"></div>
+
+              <div class="service-title py-lg-4 py-2 px-lg-5 px-3">
+                <h4 class="secondary-font">refeer</br>freight</h4>
+                <p class="text-font m-0">Years of experience in refeer loads.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 my-3 col-centered">
+            <div class="service">
+              <div class="service-image"></div>
+
+              <div class="service-title py-lg-4 py-2 px-lg-5 px-3">
+                <h4 class="secondary-font">GPS</br>tracking</h4>
+                <p class="text-font m-0">
+                  Hourly updates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 my-3 col-centered">
+            <div class="service">
+              <div class="service-image"></div>
+
+              <div class="service-title py-lg-4 py-2 px-lg-5 px-3">
+                <h4 class="secondary-font">reliable</br>carrier</h4>
+                <p class="text-font m-0">
+                  Delivering your loads safely on time
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- NOTES -->
+    <section id="notes" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <p class="text-center note-icon m-0">
+              <iconify-icon icon="ri:team-fill"></iconify-icon>
+            </p>
+            <p class="text-center font-text fs-5 m-0 note-text">
+              Good and expeprienced crew
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-center note-icon m-0">
+              <iconify-icon icon="fluent:important-16-regular"></iconify-icon>
+            </p>
+            <p class="text-center font-text fs-5 m-0 note-text">
+              Keep in mind that cheap labor is not good, and good labor is not
+              cheap
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CAREER -->
+    <section id="career" class="py-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center secondary-font h1">Career</h2>
+          <div class="underline-title bg-black" data-aos="flip-left"></div>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="col-sm-6 border-end d-flex justify-content-center align-items-center p-4"
+          >
+            <div class="career-wrap">
+              <h4 class="secondary-font mb-4 text-center">COMPANY DRIVERS <br> WANTED</h4>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                Looking for experienced & safe drivers
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                No forced dispatch
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                Loaded & empty miles paid
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                Trucks are equiped with fridge & inverter
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 d-flex justify-content-center align-items-center p-4"
+          >
+            <div class="career-wrap">
+              <h4 class="secondary-font mb-4 text-center">OWNER OPERATORS / LTP  DRIVERS <br> WANTED</h4>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                Looking for experienced & safe drivers
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                Great conditions
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                No forced dispatch
+              </p>
+              <p class="text-font d-flex align-items-center">
+                <iconify-icon
+                  icon="material-symbols:check"
+                  class="primary-text me-2 fs-4"
+                ></iconify-icon>
+                No long term agreement & down payment
+              </p>
+            </div>
+          </div>
+          <div id="carrer-btn"class="">
+            <p class="mt-5 text-center">
+              <a href="#" class="primary-btn" data-modal-target="#apply-modal">APPLY NOW</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="position-relative">
+      <div class="dark-overlay"></div>
+      <div class="container position-relative py-5">
+        <div class="row">
+          <h2 class="text-center text-white secondary-font h1">Contact</h2>
+          <div class="underline-title bg-white" data-aos="flip-left"></div>
+        </div>
+        <div class="row mt-5 d-flex align-items-stretch">
+          <div class="col-sm-6">
+            <form action="#" id="contact_form">
+              <label for="from" class="text-white text-font">From</label>
+              <input
+                type="text"
+                class="form-input"
+                required
+                name="from"
+                id="from"
+              />
+              <div class="row mt-2">
+                <div class="col-sm-6">
+                  <label for="pu_date" class="text-white text-font"
+                    >Pu. Date</label
+                  >
+                  <input
+                    type="date"
+                    required
+                    class="form-input"
+                    name="pu_date"
+                    id="pu_date"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <label for="from" class="text-white text-font"
+                    >Del. Date</label
+                  ><input
+                    type="date"
+                    required
+                    class="form-input"
+                    name="del_date"
+                    id="del_date"
+                  />
+                </div>
+              </div>
+              <label for="to" class="text-white text-font mt-2">To</label>
+              <input
+                type="text"
+                required
+                class="form-input"
+                name="to"
+                id="to"
+              />
+              <label for="contact_input" class="text-white text-font mt-2"
+                >Contact</label
+              >
+              <input
+                type="text"
+                class="form-input"
+                required
+                name="contact_input"
+                id="contact_input"
+              />
+              <input
+                type="submit"
+                required
+                value="Get price"
+                id="form_sub"
+                class="primary-btn primary-bg border-0 mt-3"
+              />
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div
+              class="contact-info d-flex align-items-center justify-content-center"
+            >
+              <div>
+                <h4 class="text-center text-white secondary-font">Telephone</h4>
+                <p
+                  class="text-font d-flex align-items-center justify-content-center my-3 text-white"
+                >
+                  <iconify-icon
+                    icon="ic:baseline-local-phone"
+                    class="primary-text me-2 fs-4"
+                  ></iconify-icon
+                  >(463) 271-2101
+                </p>
+                <h4 class="text-center text-white secondary-font mt-4">
+                  EMAIL
+                </h4>
+                <p
+                  class="text-font d-flex align-items-center justify-content-center my-3 text-white"
+                ><iconify-icon
+                  icon="fluent:mail-20-filled"
+                  class="primary-text me-2 fs-4"
+                  id="email_icon"
+                  ></iconify-icon
+                  >dispatch@littlesparrow.us
+                </p>
+                <h4 class="text-center text-white secondary-font mt-4">
+                  location
+                </h4>
+                <p
+                  class="text-font m-0 d-flex align-items-center justify-content-center my-3 text-white"
+                >
+                  <iconify-icon
+                    icon="material-symbols:location-on"
+                    class="primary-text me-2 fs-4"
+                  ></iconify-icon
+                  >FISHERS,IN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 justify-content-center">
+            <img src="img/logo-wide.png" alt="logo footer" />
+            <p class="mt-3 text-font text-center">
+              If you appreciate good and fast </br>our relationship is going to last.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="secondary-font text-center">CALL US</h3>
+            <p class="text-font mt-4">
+              <a
+                href="tel:+1-463-238-2264"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="ic:baseline-local-phone"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                (463) 238-2264</a
+              >
+            </p>
+            <p class="text-font mt-2">
+              <a
+                href="tel:+1-463-223-5997"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="ic:baseline-local-phone"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                (463) 223-5997</a
+              >
+            </p>
+            <p class="text-font mt-2">
+              <a
+                href="tel:+1-463-238-2218"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="ic:baseline-local-phone"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                (463) 238-2218</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="secondary-font text-center">CONTACT US</h3>
+            <p class="text-font mt-4">
+              <a
+                href="mailto:recruiting@littlesparrow.us"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="fluent:mail-20-filled"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                recruiting@littlesparrow.us</a
+              >
+            </p>
+            <p class="text-font mt-2">
+              <a
+                href="mailto:dispatch@littlesparrow.us"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="fluent:mail-20-filled"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                dispatch@littlesparrow.us</a
+              >
+            </p>
+            <p class="text-font mt-2">
+              <a
+                href="mailto:accounting@littlesparrow.us"
+                class="d-flex align-items-center justify-content-center footer-link"
+              >
+                <iconify-icon
+                  icon="fluent:mail-20-filled"
+                  class="me-2 fs-5 secondary-text"
+                ></iconify-icon>
+                accounting@littlesparrow.us</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="under-footer p-1">
+        <p class="text-center m-0 text-font">Copyright © 2022 Little Sparrow</p>
+      </div>
+    </footer>
+    <div class="apply-modal" id="apply-modal" >
+      <div class="modal-header d-flex justify-content-between align-items-center">
+        <div class="modal-title secondary-font">
+          APPLY FORM
+        </div>
+        <button data-close-button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="apply-form"name="apply-form" action="#">
+          <label for="apply-name" class="text-font">Name</label>
+          <input
+            type="text"
+            class="form-input"
+            required
+            name="apply-name"
+            id="apply-name"
+          />
+          <label for="apply-lastname" class="text-font mt-2">Lastname</label>
+          <input
+            type="text"
+            required
+            class="form-input"
+            name="apply-lastname"
+            id="apply-lastname"
+          />
+          <label for="apply-tel" class="text-font mt-2"
+            >Phone</label
+          >
+          <input
+            type="tel"
+            class="form-input"
+            required
+            name="apply-tel"
+            id="apply-tel"
+          />
+          <label for="apply-mail" class="text-font mt-2"
+            >Email</label
+          >
+          <input
+            type="email"
+            class="form-input"
+            required
+            name="apply-mail"
+            id="apply-mail"
+          />
+          <label for="contact_input" class="text-font mt-2"
+            >Years of experience</label
+          >
+          <input
+            type="number"
+            class="form-input row"
+            min="2"
+            placeholder="At least 2 years"
+            required
+            name="apply-yoe"
+            id="apply-yoe"
+          />
+          <label for="contact_input" class="text-font mt-2"
+            >Choose type of employment</label
+          >
+          <select
+            class="form-input row"
+            required
+
+            name="apply-toe"
+            id="apply-toe"
+          >
+            <option value="Owner operator">Owner operator</option>
+            <option value="Company driver">Company driver</option>
+            <option value="other" selected>...</option>
+          </select> 
+          <label for="apply-mess" class="text-font mt-2"
+            >Ask anything you want</label
+          >
+          <textarea
+            class="form-input"
+            name="apply-mess"
+            id="apply-mess"
+            rows="3"
+          > </textarea>
+          <input
+            type="submit"
+            id="apply-sub"
+            required
+            value="SUBMIT"
+            class="primary-btn primary-bg border-0 mt-3"
+          />
+        </form>      </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- EMAIL JS -->
+    <script src="scripts/app.js"></script>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
