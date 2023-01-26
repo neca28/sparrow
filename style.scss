@@ -177,6 +177,12 @@ nav {
     }
   }
 }
+h1{
+  @include media(550px){
+    font-size: 26pt;
+  }
+}
+
 #cover {
   background-image: url("../img/cover-bg.jpg");
   background-size: cover;
@@ -186,10 +192,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  @include media(550px){
+    background-position: 60% 50%;
+  }
   .cover-text {
     font-size: 1.7rem;
     width: 75%;
     margin: 2rem auto;
+    @include media(550px){
+      font-size: 1.2rem;
+    }
   }
 }
 #features {
